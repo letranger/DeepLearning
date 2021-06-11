@@ -668,7 +668,7 @@ Test Acc: 0.9823
 
 #+latex:\newpage
 
-* 作業二
+* 個人作業二
 :PROPERTIES:
 :CUSTOM_ID: HomeWork-2
 :END:
@@ -687,9 +687,14 @@ Test Acc: 0.9823
 請你建立一個預測MODEL，以利該中心將來遇到類似病情的患者時只要先針對這些特徵值進行檢驗，即可了解該病例是否為此病患者，並即時予以適當治療。
 
 ** 作業要求
-嗯，基本上就是自由心證，你們這組能交多少就交多少，你們想只交一張圖也行，你們要從頭交待你們在做什麼、每一個步驟有啥意義、一共測了幾種CASE、最後成果如何、你們的心得....也行，看你們的誠意啦-_-(這向來是最坑人的一句話)
+- 嗯，基本上就是自由心證，你能交多少就交多少，你想只交一張圖也行，你要從頭交待你們在做什麼、每一個步驟有啥意義、一共測了幾種CASE、最後成果如何、你們的心得....也行，看你的誠意啦-_-(這向來是最坑人的一句話)
+- 我是這樣覺得啦...model隨便叠一叠，精確度至少也不應該低於 *0.8* 吧...QQ
 
-* 作業三 :noexport:
+** 參考答案 :noexport:
+- [[https://colab.research.google.com/drive/1RjvgCt_QUPB7CQVTQ7DHL6qzfdfR1EYx][05.Keras糖尿病預測.ipynb]]
+- https://www.kaggle.com/saurabh00007/diabetescsv?select=diabetes.csv
+
+* 小組作業三 :noexport:
 ** Resources
 *** 如何讀取自己的資料:  [[https://towardsdatascience.com/loading-custom-image-dataset-for-deep-learning-models-part-1-d64fa7aaeca6][Loading Custom Image Dataset for Deep Learning Models: Part 1]]
 *** Typical steps for loading custom dataset for Deep Learning Models
@@ -702,10 +707,6 @@ Test Acc: 0.9823
 - [[https://www.gushiciku.cn/pl/pL8p/zh-tw][Kaggle知識點：資料擴增方法]]
 - [[https://tw.leaderg.com/article/index?sn=11132][影像資料擴增 (Image Data Augmentation) 的原理與實作]]
 - [[https://iter01.com/465481.html][深度學習領域的資料增強]]
-
-** 參考答案 :noexport:
-- [[https://colab.research.google.com/drive/1RjvgCt_QUPB7CQVTQ7DHL6qzfdfR1EYx][05.Keras糖尿病預測.ipynb]]
-- https://www.kaggle.com/saurabh00007/diabetescsv?select=diabetes.csv
 
 * Next Subject :noexport:
 Kaggle: https://www.kaggle.com/ryanholbrook/overfitting-and-underfitting
