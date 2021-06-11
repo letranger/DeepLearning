@@ -339,6 +339,9 @@ plt.scatter(x_data, y_data)
 #+latex:\newpage
 
 * DEMO 2: MNIST 資料集
+:PROPERTIES:
+:CUSTOM_ID: Hi-MNIST
+:END:
 ** colab :noexport:
 - https://colab.research.google.com/drive/156RHtxeqf5NsnT6JYCepIVoWKtCRmSAM#scrollTo=0-ks138Tr1zT
 - [[https://medium.com/bryanyang0528/deep-learning-keras-%E6%89%8B%E5%AF%AB%E8%BE%A8%E8%AD%98-mnist-b41757567684][[Deep Learning] Keras 手寫辨識 MNIST]]
@@ -666,6 +669,9 @@ Test Acc: 0.9823
 #+latex:\newpage
 
 * 作業二
+:PROPERTIES:
+:CUSTOM_ID: HomeWork-2
+:END:
 ** 背景
 某醫學研究中心針對旗下醫院800名疑似患有「無定向喪心病狂間歇性全身機能失調症」的患者做了一份病徵研究，針對以下這些可能病徵進行程度檢驗
 1. 抑鬱
@@ -683,6 +689,7 @@ Test Acc: 0.9823
 ** 作業要求
 嗯，基本上就是自由心證，你們這組能交多少就交多少，你們想只交一張圖也行，你們要從頭交待你們在做什麼、每一個步驟有啥意義、一共測了幾種CASE、最後成果如何、你們的心得....也行，看你們的誠意啦-_-(這向來是最坑人的一句話)
 
+* 作業三 :noexport:
 ** Resources
 *** 如何讀取自己的資料:  [[https://towardsdatascience.com/loading-custom-image-dataset-for-deep-learning-models-part-1-d64fa7aaeca6][Loading Custom Image Dataset for Deep Learning Models: Part 1]]
 *** Typical steps for loading custom dataset for Deep Learning Models
