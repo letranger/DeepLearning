@@ -1,0 +1,13 @@
+# 載入 MNIST 模型
+saver = tf.train.Saver()
+with tf.Session() as sess:
+    saver.restore(sess, tf.train.latest_checkpoint(model_dir))
+    # 隨機提取 MNIST 測試集的一個樣本資料和標籤
+    test_len=len(mnist.test.images)
+    test_idx=random.randint(0,test_len-1)
+    x_image=mnist.test.images[test_idx]
+    y=np.argmax(mnist.test.labels[test_idx])
+    # 跑模型進行識別
+    y_conv = tf.argmax(y_conv,1)
+    pred=sess.run(y_conv,feed_dict={x:[x_image], keep_prob: 1.0})
+    print('正確：',y,'，預測：',pred[0])
