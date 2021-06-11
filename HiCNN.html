@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2021-06-12 Sat 02:04 -->
+<!-- 2021-06-12 Sat 02:06 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Say Hi to CNN</title>
@@ -250,76 +250,76 @@ html{font-family:sans-serif;line-height:1.15;-ms-text-size-adjust:100%;-webkit-t
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#org9898c81">1. 神經網路解題步驟</a></li>
-<li><a href="#org2b16450">2. 收集資料</a>
+<li><a href="#orgbd0872d">1. 神經網路解題步驟</a></li>
+<li><a href="#org18b09d3">2. 收集資料</a>
 <ul>
-<li><a href="#orgc885316">2.1. 資料類型</a></li>
-<li><a href="#orgc648d0a">2.2. DEMO</a></li>
+<li><a href="#org76d8b90">2.1. 資料類型</a></li>
+<li><a href="#org886bf5e">2.2. DEMO</a></li>
 </ul>
 </li>
-<li><a href="#org8b7a745">3. 準備數據 (Preparing that data)</a>
+<li><a href="#orgae7b399">3. 準備數據 (Preparing that data)</a>
 <ul>
-<li><a href="#org319b4c8">3.1. 常態化</a></li>
-<li><a href="#orgd5e707f">3.2. 標準化</a></li>
-<li><a href="#orgbd6be21">3.3. DEMO</a></li>
+<li><a href="#orgc4df6c6">3.1. 常態化</a></li>
+<li><a href="#org40b6d0f">3.2. 標準化</a></li>
+<li><a href="#org0533d83">3.3. DEMO</a></li>
 </ul>
 </li>
-<li><a href="#org5f9b300">4. 選擇模型 (Choosing a model)</a>
+<li><a href="#orgbba7754">4. 選擇模型 (Choosing a model)</a>
 <ul>
-<li><a href="#org84c1cd9">4.1. 語法</a></li>
-<li><a href="#org8446951">4.2. DEMO</a></li>
+<li><a href="#org87c0e39">4.1. 語法</a></li>
+<li><a href="#org443720d">4.2. DEMO</a></li>
 </ul>
 </li>
-<li><a href="#org2507286">5. 訓練機器 (Training)</a>
+<li><a href="#orgebf6c82">5. 訓練機器 (Training)</a>
 <ul>
-<li><a href="#orgffe873b">5.1. 語法</a></li>
-<li><a href="#orgc0cb9fa">5.2. DEMO</a></li>
+<li><a href="#org5a05738">5.1. 語法</a></li>
+<li><a href="#org63877a5">5.2. DEMO</a></li>
 </ul>
 </li>
-<li><a href="#org65efece">6. 評估分析 (Evaluation)</a></li>
-<li><a href="#org2ad3cac">7. 調整參數 (Hyperparameter tuning)</a>
+<li><a href="#orgd978643">6. 評估分析 (Evaluation)</a></li>
+<li><a href="#org03a92cc">7. 調整參數 (Hyperparameter tuning)</a>
 <ul>
-<li><a href="#orgdc8a1cd">7.1. model參數</a></li>
-<li><a href="#orgc9a6100">7.2. Hyperparameters</a></li>
+<li><a href="#orgabfdd8e">7.1. model參數</a></li>
+<li><a href="#org29b4de2">7.2. Hyperparameters</a></li>
 </ul>
 </li>
-<li><a href="#orge7bf680">8. 預測推論 (Prediction)</a></li>
-<li><a href="#orgcaa64e8">9. DEMO 1: Regression</a>
+<li><a href="#orgc12f2a0">8. 預測推論 (Prediction)</a></li>
+<li><a href="#org2b8b49b">9. DEMO 1: Regression</a>
 <ul>
-<li><a href="#orge3c85f0">9.1. 產生數據</a></li>
-<li><a href="#org6ade382">9.2. 建立model</a></li>
-<li><a href="#org0c60237">9.3. 訓練model</a></li>
-<li><a href="#orgf4d4fae">9.4. 查看訓練過程</a></li>
-<li><a href="#orgf986d33">9.5. 評估model</a></li>
-<li><a href="#org513f0b8">9.6. 預測結果</a></li>
-<li><a href="#orgbbe29e0">9.7. 調整model/參數</a></li>
+<li><a href="#org7949c0a">9.1. 產生數據</a></li>
+<li><a href="#orge61d493">9.2. 建立model</a></li>
+<li><a href="#org5c6153e">9.3. 訓練model</a></li>
+<li><a href="#orga6d77d4">9.4. 查看訓練過程</a></li>
+<li><a href="#org4c6615e">9.5. 評估model</a></li>
+<li><a href="#org64904fa">9.6. 預測結果</a></li>
+<li><a href="#org7e885f5">9.7. 調整model/參數</a></li>
 </ul>
 </li>
-<li><a href="#orgf30029f">10. 練習: Regression</a>
+<li><a href="#orgc8853b3">10. 練習: Regression</a>
 <ul>
-<li><a href="#orgbef37e1">10.1. 數據</a></li>
+<li><a href="#org5236ca1">10.1. 數據</a></li>
 </ul>
 </li>
 <li><a href="#Hi-MNIST">11. DEMO 2: MNIST 資料集</a>
 <ul>
-<li><a href="#orgd0ad06e">11.1. MNIST</a></li>
-<li><a href="#org169ad07">11.2. 準備 MNIST 資料</a></li>
-<li><a href="#orgfcae532">11.3. MNIST 的推論處理</a></li>
-<li><a href="#org119f6c9">11.4. MNIST 資料集:以 DNN Sequential 模型為例</a></li>
+<li><a href="#orga49d7ac">11.1. MNIST</a></li>
+<li><a href="#org1d433de">11.2. 準備 MNIST 資料</a></li>
+<li><a href="#orgd7a7933">11.3. MNIST 的推論處理</a></li>
+<li><a href="#org79143d0">11.4. MNIST 資料集:以 DNN Sequential 模型為例</a></li>
 </ul>
 </li>
 <li><a href="#HomeWork-2">12. 個人作業二</a>
 <ul>
-<li><a href="#orgad24939">12.1. 背景</a></li>
-<li><a href="#org993e478">12.2. 作業要求</a></li>
+<li><a href="#org3534429">12.1. 背景</a></li>
+<li><a href="#org041be57">12.2. 作業要求</a></li>
 </ul>
 </li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-org9898c81" class="outline-2">
-<h2 id="org9898c81"><span class="section-number-2">1</span> 神經網路解題步驟</h2>
+<div id="outline-container-orgbd0872d" class="outline-2">
+<h2 id="orgbd0872d"><span class="section-number-2">1</span> 神經網路解題步驟</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 使用神經網路解決問題可大致分為兩個步驟：「學習」與「推論」。<br />
@@ -343,16 +343,16 @@ html{font-family:sans-serif;line-height:1.15;-ms-text-size-adjust:100%;-webkit-t
 </div>
 </div>
 
-<div id="outline-container-org2b16450" class="outline-2">
-<h2 id="org2b16450"><span class="section-number-2">2</span> 收集資料</h2>
+<div id="outline-container-org18b09d3" class="outline-2">
+<h2 id="org18b09d3"><span class="section-number-2">2</span> 收集資料</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-orgc885316" class="outline-3">
-<h3 id="orgc885316"><span class="section-number-3">2.1</span> 資料類型</h3>
+<div id="outline-container-org76d8b90" class="outline-3">
+<h3 id="org76d8b90"><span class="section-number-3">2.1</span> 資料類型</h3>
 <div class="outline-text-3" id="text-2-1">
 </div>
 <ol class="org-ol">
-<li><a id="orga1c08ad"></a>人工收集<br />
+<li><a id="org162984c"></a>人工收集<br />
 <div class="outline-text-4" id="text-2-1-1">
 <ul class="org-ul">
 <li>預測股市股價: 開盤、收盤、成交量、技術指標、財務指標、籌碼指標等等<br /></li>
@@ -361,15 +361,15 @@ html{font-family:sans-serif;line-height:1.15;-ms-text-size-adjust:100%;-webkit-t
 </ul>
 </div>
 </li>
-<li><a id="org14e9ad9"></a>現成資料集<br />
+<li><a id="orgd2fa976"></a>現成資料集<br />
 <div class="outline-text-4" id="text-2-1-2">
 <ul class="org-ul">
 <li><p>
 MNIST<br />
-資料集由 0~9 的數字影像構成(如圖<a href="#org2808dd6">1</a>)，共計 60000 張訓練影像、10000 張測試影像。<br />
+資料集由 0~9 的數字影像構成(如圖<a href="#org99a1690">1</a>)，共計 60000 張訓練影像、10000 張測試影像。<br />
 </p>
 
-<div id="org2808dd6" class="figure">
+<div id="org99a1690" class="figure">
 <p><img src="images/MNIST.jpg" alt="MNIST.jpg" width="400" /><br />
 </p>
 <p><span class="figure-number">Figure 1: </span>MNIST 資料集內容範例</p>
@@ -381,7 +381,7 @@ Iris<br />
 鳶尾花資料集是非常著名的生物資訊資料集之一，取自美國加州大學歐文分校的機器學習資料庫，資料的筆數為150筆，共有五個欄位：花萼長度(Sepal Length)、花萼寬度(Sepal Width)、花瓣長度(Petal Length) 、花瓣寬度(Petal Width)、類別(Class)：可分為Setosa，Versicolor和Virginica三個品種。<br />
 </p>
 
-<div id="orgf209992" class="figure">
+<div id="orgafc95cd" class="figure">
 <p><img src="images/cqy409dEexm96zavyuw.png" alt="cqy409dEexm96zavyuw.png" width="500" /><br />
 </p>
 <p><span class="figure-number">Figure 2: </span>Iris資料集</p>
@@ -391,7 +391,7 @@ Cifar-10<br />
 由深度學習大師 Geoffrey Hinton 教授與其在加拿大多倫多大學的學生 Alex Krixhevsky 與 Vinoid Nair 所整理之影像資料集, 包含 6 萬筆 32*32 低解析度之彩色圖片, 其中 5 萬筆為訓練集; 1 萬筆為測試集, 是機器學習中常用的圖片辨識資料集<br />
 </p>
 
-<div id="orga51155c" class="figure">
+<div id="org8b5f194" class="figure">
 <p><img src="images/cifar10-ten-categories.jpg" alt="cifar10-ten-categories.jpg" width="500" /><br />
 </p>
 <p><span class="figure-number">Figure 3: </span>Cifar-10</p>
@@ -402,8 +402,8 @@ Cifar-10<br />
 </ol>
 </div>
 
-<div id="outline-container-orgc648d0a" class="outline-3">
-<h3 id="orgc648d0a"><span class="section-number-3">2.2</span> DEMO</h3>
+<div id="outline-container-org886bf5e" class="outline-3">
+<h3 id="org886bf5e"><span class="section-number-3">2.2</span> DEMO</h3>
 <div class="outline-text-3" id="text-2-2">
 <div class="org-src-container">
 <pre class="src src-python"><span style="color: #51afef;">from</span> keras.datasets <span style="color: #51afef;">import</span> mnist
@@ -414,8 +414,8 @@ Cifar-10<br />
 </div>
 </div>
 
-<div id="outline-container-org8b7a745" class="outline-2">
-<h2 id="org8b7a745"><span class="section-number-2">3</span> 準備數據 (Preparing that data)</h2>
+<div id="outline-container-orgae7b399" class="outline-2">
+<h2 id="orgae7b399"><span class="section-number-2">3</span> 準備數據 (Preparing that data)</h2>
 <div class="outline-text-2" id="text-3">
 <p>
 當我們在比較分析兩組數據資料時，可能會遭遇因單位的不同(例如：身高與體重)，或數字大小的代表性不同(例如：粉專1萬人與滿足感0.8)，造成各自變化的程度不一，進而影響統計分析的結果。<sup><a id="fnr.1" class="footref" href="#fn.1">1</a></sup><br />
@@ -425,7 +425,7 @@ Cifar-10<br />
 資料的正規化(Normalization)是將原始資料的數據按比例縮放於 [0, 1] 區間中，且不改變其原本分佈。<br />
 </p>
 
-<div id="orgfdd4684" class="figure">
+<div id="org337c63d" class="figure">
 <p><img src="images/normalized.png" alt="normalized.png" width="500" /><br />
 </p>
 <p><span class="figure-number">Figure 4: </span>資料正規化</p>
@@ -435,8 +435,8 @@ Cifar-10<br />
 正規化有兩種常用的方法，可以將不同規模的特徵轉化為相同的規模：常態化(normalization)和標準化(standardization)：<br />
 </p>
 </div>
-<div id="outline-container-org319b4c8" class="outline-3">
-<h3 id="org319b4c8"><span class="section-number-3">3.1</span> 常態化</h3>
+<div id="outline-container-orgc4df6c6" class="outline-3">
+<h3 id="orgc4df6c6"><span class="section-number-3">3.1</span> 常態化</h3>
 <div class="outline-text-3" id="text-3-1">
 <p>
 將特徵值縮化為 0~1 間，這是「最小最大縮放」(min-max scaling)的一個特例，某一特徵值的常態化做法如下：<br />
@@ -453,8 +453,8 @@ Cifar-10<br />
 </div>
 </div>
 
-<div id="outline-container-orgd5e707f" class="outline-3">
-<h3 id="orgd5e707f"><span class="section-number-3">3.2</span> 標準化</h3>
+<div id="outline-container-org40b6d0f" class="outline-3">
+<h3 id="org40b6d0f"><span class="section-number-3">3.2</span> 標準化</h3>
 <div class="outline-text-3" id="text-3-2">
 <p>
 雖說常態化簡單實用，但對許多機器學習演算法來說(特別是梯度下降法的最佳化)，標準化則更為實際，我們可令標準化後的特徵值其平均數為 0、標準差為 1，這樣一來，特徵值會滿足常態分佈，進而使演算法對於離群值不那麼敏感。標準化的公式如下：<br />
@@ -471,8 +471,8 @@ Cifar-10<br />
 </div>
 </div>
 
-<div id="outline-container-orgbd6be21" class="outline-3">
-<h3 id="orgbd6be21"><span class="section-number-3">3.3</span> DEMO</h3>
+<div id="outline-container-org0533d83" class="outline-3">
+<h3 id="org0533d83"><span class="section-number-3">3.3</span> DEMO</h3>
 <div class="outline-text-3" id="text-3-3">
 <div class="org-src-container">
 <pre class="src src-python"><span style="color: #dcaeea;">x_train</span> = x_train.reshape(<span style="color: #da8548; font-weight: bold;">60000</span>, <span style="color: #da8548; font-weight: bold;">784</span>)
@@ -491,16 +491,16 @@ Cifar-10<br />
 </div>
 </div>
 
-<div id="outline-container-org5f9b300" class="outline-2">
-<h2 id="org5f9b300"><span class="section-number-2">4</span> 選擇模型 (Choosing a model)</h2>
+<div id="outline-container-orgbba7754" class="outline-2">
+<h2 id="orgbba7754"><span class="section-number-2">4</span> 選擇模型 (Choosing a model)</h2>
 <div class="outline-text-2" id="text-4">
 <p>
 當數據都進行整理後，接下來就是要選擇訓練用的模型，像是決策樹、LSTM、RNN等等都是機器學習中常使用的訓練模型，其中目前較常拿來訓練股市的是「LSTM」，中文叫做長短期記憶，是屬於深度學習中的一個模型。<br />
 </p>
 </div>
 
-<div id="outline-container-org84c1cd9" class="outline-3">
-<h3 id="org84c1cd9"><span class="section-number-3">4.1</span> 語法</h3>
+<div id="outline-container-org87c0e39" class="outline-3">
+<h3 id="org87c0e39"><span class="section-number-3">4.1</span> 語法</h3>
 <div class="outline-text-3" id="text-4-1">
 <p>
 <a href="https://keras.io/api/models/model_training_apis/">Keras API reference / Models API / Model training APIs </a><br />
@@ -508,12 +508,12 @@ Cifar-10<br />
 </div>
 </div>
 
-<div id="outline-container-org8446951" class="outline-3">
-<h3 id="org8446951"><span class="section-number-3">4.2</span> DEMO</h3>
+<div id="outline-container-org443720d" class="outline-3">
+<h3 id="org443720d"><span class="section-number-3">4.2</span> DEMO</h3>
 <div class="outline-text-3" id="text-4-2">
 </div>
 <ol class="org-ol">
-<li><a id="org19e8e43"></a>LSTM<br />
+<li><a id="org5a94688"></a>LSTM<br />
 <div class="outline-text-4" id="text-4-2-1">
 <div class="org-src-container">
 <pre class="src src-python"><span style="color: #dcaeea;">model</span> = Sequential()
@@ -533,7 +533,7 @@ model.add(Dense(<span style="color: #da8548; font-weight: bold;">10</span>, acti
 </div>
 </div>
 </li>
-<li><a id="orgbec940a"></a>CNN<br />
+<li><a id="org4493e2d"></a>CNN<br />
 <div class="outline-text-4" id="text-4-2-2">
 <div class="org-src-container">
 <pre class="src src-python"><span style="color: #dcaeea;">model</span> = Sequential()
@@ -550,7 +550,7 @@ model.add(Dense(units=<span style="color: #da8548; font-weight: bold;">10</span>
 </pre>
 </div>
 
-<div id="org1d0d550" class="figure">
+<div id="orgcb020d3" class="figure">
 <p><img src="images/MNIST-CNN.png" alt="MNIST-CNN.png" width="500" /><br />
 </p>
 <p><span class="figure-number">Figure 5: </span>MNIST-NeuralNet</p>
@@ -561,8 +561,8 @@ model.add(Dense(units=<span style="color: #da8548; font-weight: bold;">10</span>
 </div>
 </div>
 
-<div id="outline-container-org2507286" class="outline-2">
-<h2 id="org2507286"><span class="section-number-2">5</span> 訓練機器 (Training)</h2>
+<div id="outline-container-orgebf6c82" class="outline-2">
+<h2 id="orgebf6c82"><span class="section-number-2">5</span> 訓練機器 (Training)</h2>
 <div class="outline-text-2" id="text-5">
 <p>
 選擇好訓練模型後，再來要將訓練集資料丟進去模型中做訓練，每層要放多少神經元、要跑幾層等等都會影響模型訓練出來的結果，這部分只能靠經驗跟不斷嘗試去學習，或是上網多爬文看別人怎麼撰寫訓練模型<br />
@@ -572,20 +572,20 @@ model.add(Dense(units=<span style="color: #da8548; font-weight: bold;">10</span>
 在真正訓練前應該再設定好模型的loss function, optimizer。<br />
 </p>
 </div>
-<div id="outline-container-orgffe873b" class="outline-3">
-<h3 id="orgffe873b"><span class="section-number-3">5.1</span> 語法</h3>
+<div id="outline-container-org5a05738" class="outline-3">
+<h3 id="org5a05738"><span class="section-number-3">5.1</span> 語法</h3>
 <div class="outline-text-3" id="text-5-1">
 <p>
 <a href="https://keras.io/api/models/model_training_apis/">Keras API reference / Models API / Model training APIs </a><br />
 </p>
 </div>
 </div>
-<div id="outline-container-orgc0cb9fa" class="outline-3">
-<h3 id="orgc0cb9fa"><span class="section-number-3">5.2</span> DEMO</h3>
+<div id="outline-container-org63877a5" class="outline-3">
+<h3 id="org63877a5"><span class="section-number-3">5.2</span> DEMO</h3>
 <div class="outline-text-3" id="text-5-2">
 </div>
 <ol class="org-ol">
-<li><a id="orgeee0589"></a>LSTM<br />
+<li><a id="org172779f"></a>LSTM<br />
 <div class="outline-text-4" id="text-5-2-1">
 <div class="org-src-container">
 <pre class="src src-python"><span style="color: #5B6268;"># </span><span style="color: #5B6268;">ptimizer, loss function</span>
@@ -600,7 +600,7 @@ model.fit(x_train, y_train,
 </div>
 </div>
 </li>
-<li><a id="orgd874c91"></a>CNN<br />
+<li><a id="org3d9f531"></a>CNN<br />
 <div class="outline-text-4" id="text-5-2-2">
 <div class="org-src-container">
 <pre class="src src-python"><span style="color: #5B6268;"># </span><span style="color: #5B6268;">optimizer, loss function</span>
@@ -619,8 +619,8 @@ model.fit(x=x_Train,
 </div>
 </div>
 
-<div id="outline-container-org65efece" class="outline-2">
-<h2 id="org65efece"><span class="section-number-2">6</span> 評估分析 (Evaluation)</h2>
+<div id="outline-container-orgd978643" class="outline-2">
+<h2 id="orgd978643"><span class="section-number-2">6</span> 評估分析 (Evaluation)</h2>
 <div class="outline-text-2" id="text-6">
 <p>
 當模型訓練完成後，接下來就是判斷該模型是否有過度擬合(overfitting)，這裡就是帶入測試集的資料進行評估，也可以嘗試利用交叉驗證的方式進行模型的擬合性判斷，以及利用RESM、MSE等統計計算來判斷模型的準確度<br />
@@ -632,15 +632,15 @@ model.fit(x=x_Train,
 </div>
 </div>
 
-<div id="outline-container-org2ad3cac" class="outline-2">
-<h2 id="org2ad3cac"><span class="section-number-2">7</span> 調整參數 (Hyperparameter tuning)</h2>
+<div id="outline-container-org03a92cc" class="outline-2">
+<h2 id="org03a92cc"><span class="section-number-2">7</span> 調整參數 (Hyperparameter tuning)</h2>
 <div class="outline-text-2" id="text-7">
 <p>
 到這大致上模型已經完成了50%，最後的一步就是進行參數的微調，我們也稱為「超參數 (Hyperparamters)」，讓整個模型更加的精準，但也不能過度的調整，因為會造成overfitting的結果，這個取捨就只能依照無窮盡的反覆迭帶去尋找了，這部分也是相對較耗時間的地方<br />
 </p>
 </div>
-<div id="outline-container-orgdc8a1cd" class="outline-3">
-<h3 id="orgdc8a1cd"><span class="section-number-3">7.1</span> model參數</h3>
+<div id="outline-container-orgabfdd8e" class="outline-3">
+<h3 id="orgabfdd8e"><span class="section-number-3">7.1</span> model參數</h3>
 <div class="outline-text-3" id="text-7-1">
 <ul class="org-ul">
 <li>調整model架構: <a href="https://medium.com/%E9%9B%9E%E9%9B%9E%E8%88%87%E5%85%94%E5%85%94%E7%9A%84%E5%B7%A5%E7%A8%8B%E4%B8%96%E7%95%8C/%E6%A9%9F%E5%99%A8%E5%AD%B8%E7%BF%92-ml-note-cnn%E6%BC%94%E5%8C%96%E5%8F%B2-alexnet-vgg-inception-resnet-keras-coding-668f74879306">[機器學習 ML NOTE] CNN演化史(AlexNet、VGG、Inception、ResNet)+Keras Coding</a><br /></li>
@@ -649,8 +649,8 @@ model.fit(x=x_Train,
 </ul>
 </div>
 </div>
-<div id="outline-container-orgc9a6100" class="outline-3">
-<h3 id="orgc9a6100"><span class="section-number-3">7.2</span> Hyperparameters</h3>
+<div id="outline-container-org29b4de2" class="outline-3">
+<h3 id="org29b4de2"><span class="section-number-3">7.2</span> Hyperparameters</h3>
 <div class="outline-text-3" id="text-7-2">
 <ul class="org-ul">
 <li>batch size：一次迭代放入進行訓練或測試的影像數量。<br /></li>
@@ -661,8 +661,8 @@ model.fit(x=x_Train,
 </div>
 </div>
 
-<div id="outline-container-orge7bf680" class="outline-2">
-<h2 id="orge7bf680"><span class="section-number-2">8</span> 預測推論 (Prediction)</h2>
+<div id="outline-container-orgc12f2a0" class="outline-2">
+<h2 id="orgc12f2a0"><span class="section-number-2">8</span> 預測推論 (Prediction)</h2>
 <div class="outline-text-2" id="text-8">
 <p>
 到此，模型已經正式完成，但對於全新沒影響過的數據則是一個未知數，由於在上方訓練模型中，我們不論是訓練集或是測試集都是被模型所影響過的，如果過度擬合，那麼未來丟入新的資料就很可能無法那麼精準，這部分就只能不斷丟入新資料來推論我們模型的預測能力是否有泛化<br />
@@ -675,12 +675,12 @@ model.fit(x=x_Train,
 </div>
 </div>
 
-<div id="outline-container-orgcaa64e8" class="outline-2">
-<h2 id="orgcaa64e8"><span class="section-number-2">9</span> DEMO 1: Regression</h2>
+<div id="outline-container-org2b8b49b" class="outline-2">
+<h2 id="org2b8b49b"><span class="section-number-2">9</span> DEMO 1: Regression</h2>
 <div class="outline-text-2" id="text-9">
 </div>
-<div id="outline-container-orge3c85f0" class="outline-3">
-<h3 id="orge3c85f0"><span class="section-number-3">9.1</span> 產生數據</h3>
+<div id="outline-container-org7949c0a" class="outline-3">
+<h3 id="org7949c0a"><span class="section-number-3">9.1</span> 產生數據</h3>
 <div class="outline-text-3" id="text-9-1">
 <div class="org-src-container">
 <pre class="src src-python"><span style="color: #51afef;">import</span> matplotlib.pyplot <span style="color: #51afef;">as</span> plt
@@ -703,8 +703,8 @@ plt.scatter(x, y)
 </div>
 </div>
 
-<div id="outline-container-org6ade382" class="outline-3">
-<h3 id="org6ade382"><span class="section-number-3">9.2</span> 建立model</h3>
+<div id="outline-container-orge61d493" class="outline-3">
+<h3 id="orge61d493"><span class="section-number-3">9.2</span> 建立model</h3>
 <div class="outline-text-3" id="text-9-2">
 <div class="org-src-container">
 <pre class="src src-python"><span style="color: #51afef;">from</span> keras.models <span style="color: #51afef;">import</span> Sequential
@@ -724,8 +724,8 @@ model.<span style="color: #c678dd;">compile</span>(loss=<span style="color: #98b
 </div>
 </div>
 
-<div id="outline-container-org0c60237" class="outline-3">
-<h3 id="org0c60237"><span class="section-number-3">9.3</span> 訓練model</h3>
+<div id="outline-container-org5c6153e" class="outline-3">
+<h3 id="org5c6153e"><span class="section-number-3">9.3</span> 訓練model</h3>
 <div class="outline-text-3" id="text-9-3">
 <div class="org-src-container">
 <pre class="src src-python"><span style="color: #5B6268;"># </span><span style="color: #5B6268;">The fit() method - trains the model</span>
@@ -739,8 +739,8 @@ model.<span style="color: #c678dd;">compile</span>(loss=<span style="color: #98b
 </div>
 </div>
 
-<div id="outline-container-orgf4d4fae" class="outline-3">
-<h3 id="orgf4d4fae"><span class="section-number-3">9.4</span> 查看訓練過程</h3>
+<div id="outline-container-orga6d77d4" class="outline-3">
+<h3 id="orga6d77d4"><span class="section-number-3">9.4</span> 查看訓練過程</h3>
 <div class="outline-text-3" id="text-9-4">
 <div class="org-src-container">
 <pre class="src src-python"><span style="color: #51afef;">print</span>(train_history.history)
@@ -758,8 +758,8 @@ plt.show()
 </div>
 </div>
 
-<div id="outline-container-orgf986d33" class="outline-3">
-<h3 id="orgf986d33"><span class="section-number-3">9.5</span> 評估model</h3>
+<div id="outline-container-org4c6615e" class="outline-3">
+<h3 id="org4c6615e"><span class="section-number-3">9.5</span> 評估model</h3>
 <div class="outline-text-3" id="text-9-5">
 <div class="org-src-container">
 <pre class="src src-python"><span style="color: #5B6268;"># </span><span style="color: #5B6268;">The evaluate() method - gets the loss statistics</span>
@@ -770,8 +770,8 @@ plt.show()
 </div>
 </div>
 
-<div id="outline-container-org513f0b8" class="outline-3">
-<h3 id="org513f0b8"><span class="section-number-3">9.6</span> 預測結果</h3>
+<div id="outline-container-org64904fa" class="outline-3">
+<h3 id="org64904fa"><span class="section-number-3">9.6</span> 預測結果</h3>
 <div class="outline-text-3" id="text-9-6">
 <div class="org-src-container">
 <pre class="src src-python"><span style="color: #5B6268;"># </span><span style="color: #5B6268;">The predict() method - predict the outputs for the given inputs</span>
@@ -784,16 +784,16 @@ model.predict(x_Test[:<span style="color: #da8548; font-weight: bold;">3</span>]
 </div>
 </div>
 
-<div id="outline-container-orgbbe29e0" class="outline-3">
-<h3 id="orgbbe29e0"><span class="section-number-3">9.7</span> 調整model/參數</h3>
+<div id="outline-container-org7e885f5" class="outline-3">
+<h3 id="org7e885f5"><span class="section-number-3">9.7</span> 調整model/參數</h3>
 <div class="outline-text-3" id="text-9-7">
 </div>
 <ol class="org-ol">
-<li><a id="org53a7ee4"></a>model架構<br /></li>
-<li><a id="orgba1283a"></a>loss function<br /></li>
-<li><a id="org17c648b"></a>optimizer<br /></li>
-<li><a id="org7dd339b"></a>hyper parameters<br /></li>
-<li><a id="org020b8ae"></a>#1<br />
+<li><a id="orgeaeb274"></a>model架構<br /></li>
+<li><a id="org786f2d2"></a>loss function<br /></li>
+<li><a id="orgdc313e8"></a>optimizer<br /></li>
+<li><a id="org93adff8"></a>hyper parameters<br /></li>
+<li><a id="org8adb645"></a>#1<br />
 <div class="outline-text-4" id="text-9-7-5">
 <div class="org-src-container">
 <pre class="src src-python"><span style="color: #5B6268;"># </span><span style="color: #5B6268;">A simple regression model</span>
@@ -811,7 +811,7 @@ model.<span style="color: #c678dd;">compile</span>(loss=<span style="color: #98b
 </div>
 </li>
 
-<li><a id="org5717dd9"></a>#2<br />
+<li><a id="orgee56917"></a>#2<br />
 <div class="outline-text-4" id="text-9-7-6">
 <div class="org-src-container">
 <pre class="src src-python"><span style="color: #dcaeea;">model</span> = Sequential()
@@ -831,12 +831,12 @@ model.<span style="color: #c678dd;">compile</span>(loss=<span style="color: #98b
 </div>
 </div>
 
-<div id="outline-container-orgf30029f" class="outline-2">
-<h2 id="orgf30029f"><span class="section-number-2">10</span> 練習: Regression</h2>
+<div id="outline-container-orgc8853b3" class="outline-2">
+<h2 id="orgc8853b3"><span class="section-number-2">10</span> 練習: Regression</h2>
 <div class="outline-text-2" id="text-10">
 </div>
-<div id="outline-container-orgbef37e1" class="outline-3">
-<h3 id="orgbef37e1"><span class="section-number-3">10.1</span> 數據</h3>
+<div id="outline-container-org5236ca1" class="outline-3">
+<h3 id="org5236ca1"><span class="section-number-3">10.1</span> 數據</h3>
 <div class="outline-text-3" id="text-10-1">
 <div class="org-src-container">
 <pre class="src src-python"><span style="color: #51afef;">import</span> numpy <span style="color: #51afef;">as</span> np
@@ -852,7 +852,7 @@ plt.scatter(x_data, y_data)
 </div>
 
 
-<div id="org992abc3" class="figure">
+<div id="org534a7c2" class="figure">
 <p><img src="images/random_curve.png" alt="random_curve.png" width="500" /><br />
 </p>
 <p><span class="figure-number">Figure 6: </span>CNN練習</p>
@@ -865,12 +865,12 @@ plt.scatter(x_data, y_data)
 <h2 id="Hi-MNIST"><span class="section-number-2">11</span> DEMO 2: MNIST 資料集</h2>
 <div class="outline-text-2" id="text-Hi-MNIST">
 </div>
-<div id="outline-container-orgd0ad06e" class="outline-3">
-<h3 id="orgd0ad06e"><span class="section-number-3">11.1</span> MNIST</h3>
+<div id="outline-container-orga49d7ac" class="outline-3">
+<h3 id="orga49d7ac"><span class="section-number-3">11.1</span> MNIST</h3>
 <div class="outline-text-3" id="text-11-1">
 <ul class="org-ul">
 <li>MNIST 是機器學習領域中相當著名的資料集，號稱機器學習領域的「Hello world.」，其重要性不言可喻。<br /></li>
-<li>MNIST 資料集由 0~9 的數字影像構成(如圖<a href="#org2808dd6">1</a>)，共計 60000 張訓練影像、10000 張測試影像。<br /></li>
+<li>MNIST 資料集由 0~9 的數字影像構成(如圖<a href="#org99a1690">1</a>)，共計 60000 張訓練影像、10000 張測試影像。<br /></li>
 <li>一般的 MMIST 資料集的用法為：使用訓練影像進行學習，再利用學習後的模型預測能否正確分類測試影像。<br /></li>
 </ul>
 
@@ -880,8 +880,8 @@ plt.scatter(x_data, y_data)
 </div>
 </div>
 
-<div id="outline-container-org169ad07" class="outline-3">
-<h3 id="org169ad07"><span class="section-number-3">11.2</span> 準備 MNIST 資料</h3>
+<div id="outline-container-org1d433de" class="outline-3">
+<h3 id="org1d433de"><span class="section-number-3">11.2</span> 準備 MNIST 資料</h3>
 <div class="outline-text-3" id="text-11-2">
 <p>
 MNIST 數據集來自美國國家標準與技術研究所, National Institute of Standards and Technology (NIST). 訓練集 (training set) 由來自 250 個不同人手寫的數字構成, 其中 50% 是高中學生, 50% 來自人口普查局 (the Census Bureau) 的工作人員. 測試集(test set) 也是同樣比例的手寫數字數據。MNIST 數據集可在 <a href="http://yann.lecun.com/exdb/mnist/">http://yann.lecun.com/exdb/mnist/</a> 獲取, 它包含了四個部分:<br />
@@ -895,7 +895,7 @@ MNIST 數據集來自美國國家標準與技術研究所, National Institute of
 </div>
 
 <ol class="org-ol">
-<li><a id="orgaba320b"></a>load data<br />
+<li><a id="org6e09105"></a>load data<br />
 <div class="outline-text-4" id="text-11-2-1">
 <p>
 MNIST 資料集是一個適合拿來當作 TensotFlow 的練習素材，在 Tensorflow 的現有套件中，也已經有內建好的 MNIST 資料集，我們只要在安裝好 TensorFlow 的 Python 環境中執行以下程式碼，即可將 MNIST 資料成功讀取進來。.<br />
@@ -927,20 +927,20 @@ plt.savefig(<span style="color: #98be65;">"MNIST-Image.png"</span>)
 </pre>
 </div>
 <p>
-由上述程式輸出結果可以看到載入的 x 為大小為 28*28 的圖片共 60000 張，每一筆 MNIST 資料的照片(x)由 784 個 pixels 組成（28*28），照片內容如圖<a href="#orgc313c79">7</a>，訓練集的標籤(y)則為其對應的數字(0～9)，此例為 5。<br />
+由上述程式輸出結果可以看到載入的 x 為大小為 28*28 的圖片共 60000 張，每一筆 MNIST 資料的照片(x)由 784 個 pixels 組成（28*28），照片內容如圖<a href="#orgd00498b">7</a>，訓練集的標籤(y)則為其對應的數字(0～9)，此例為 5。<br />
 </p>
 
-<div id="orgc313c79" class="figure">
+<div id="orgd00498b" class="figure">
 <p><img src="images/MNIST-Image.png" alt="MNIST-Image.png" width="300" /><br />
 </p>
 <p><span class="figure-number">Figure 7: </span>MNIST 影像示例</p>
 </div>
 
 <p>
-x 的影像資料為灰階影像，每個像素的數值介於 0~255 之間，矩陣裡每一項的資料則是代表每個 pixel 顏色深淺的數值，如下圖<a href="#org6dfc8a4">8</a>所示：<br />
+x 的影像資料為灰階影像，每個像素的數值介於 0~255 之間，矩陣裡每一項的資料則是代表每個 pixel 顏色深淺的數值，如下圖<a href="#org0a77d38">8</a>所示：<br />
 </p>
 
-<div id="org6dfc8a4" class="figure">
+<div id="org0a77d38" class="figure">
 <p><img src="images/MNIST-Matrix.png" alt="MNIST-Matrix.png" width="400" /><br />
 </p>
 <p><span class="figure-number">Figure 8: </span>MNIST 資料矩陣</p>
@@ -978,14 +978,14 @@ np.set_printoptions(precision=<span style="color: #da8548; font-weight: bold;">2
 </ol>
 </div>
 
-<div id="outline-container-orgfcae532" class="outline-3">
-<h3 id="orgfcae532"><span class="section-number-3">11.3</span> MNIST 的推論處理</h3>
+<div id="outline-container-orgd7a7933" class="outline-3">
+<h3 id="orgd7a7933"><span class="section-number-3">11.3</span> MNIST 的推論處理</h3>
 <div class="outline-text-3" id="text-11-3">
 <p>
-如圖<a href="#org1d0d550">5</a>所示，MNIST 的推論神經網路最前端的輸入層有 784 (\(28*28=784\))個神經元，最後的輸出端有 10 個神經元(\(0~9\)個數字)，至於中間的隠藏層有兩個，第 1 個隱藏層有 50 個神經元，第 2 層有 100 個。此處的 50、100 可以設定為任意數（如，也可以是 128、64）。<br />
+如圖<a href="#orgcb020d3">5</a>所示，MNIST 的推論神經網路最前端的輸入層有 784 (\(28*28=784\))個神經元，最後的輸出端有 10 個神經元(\(0~9\)個數字)，至於中間的隠藏層有兩個，第 1 個隱藏層有 50 個神經元，第 2 層有 100 個。此處的 50、100 可以設定為任意數（如，也可以是 128、64）。<br />
 </p>
 
-<div id="org170f551" class="figure">
+<div id="orgd9f3904" class="figure">
 <p><img src="images/MNIST-CNN.png" alt="MNIST-CNN.png" width="500" /><br />
 </p>
 <p><span class="figure-number">Figure 9: </span>MNIST-NeuralNet</p>
@@ -993,8 +993,8 @@ np.set_printoptions(precision=<span style="color: #da8548; font-weight: bold;">2
 </div>
 </div>
 
-<div id="outline-container-org119f6c9" class="outline-3">
-<h3 id="org119f6c9"><span class="section-number-3">11.4</span> MNIST 資料集:以 DNN Sequential 模型為例</h3>
+<div id="outline-container-org79143d0" class="outline-3">
+<h3 id="org79143d0"><span class="section-number-3">11.4</span> MNIST 資料集:以 DNN Sequential 模型為例</h3>
 <div class="outline-text-3" id="text-11-4">
 <p>
 此處以最簡單的 DNN (deep neural network) 作為範例。以 Keras 的核心為模型，應用最常使用 Sequential 模型。藉由.add()我們可以一層一層的將神經網路疊起。在每一層之中我們只需要簡單的設定每層的大小(units)與激活函數(activation function)。需要特別記得的是：第一層要記得寫輸入的向量大小、最後一層的 units 要等於輸出的向量大小。在這邊我們最後一層使用的激活函數(activation function)為 softmax。<br />
@@ -1002,7 +1002,7 @@ np.set_printoptions(precision=<span style="color: #da8548; font-weight: bold;">2
 </div>
 
 <ol class="org-ol">
-<li><a id="org8786ba3"></a>Import Library<br />
+<li><a id="org9715da8"></a>Import Library<br />
 <div class="outline-text-4" id="text-11-4-1">
 <div class="org-src-container">
 <pre class="src src-python"><span style="color: #51afef;">from</span> keras.datasets <span style="color: #51afef;">import</span> mnist
@@ -1014,7 +1014,7 @@ np.random.seed(<span style="color: #da8548; font-weight: bold;">10</span>)
 </div>
 </li>
 
-<li><a id="orgcf3048b"></a>資料預處理<br />
+<li><a id="org799a5fc"></a>資料預處理<br />
 <div class="outline-text-4" id="text-11-4-2">
 <div class="org-src-container">
 <pre class="src src-python">(x_Train, y_Train), (x_Test, y_Test) = mnist.load_data()
@@ -1040,7 +1040,7 @@ np.random.seed(<span style="color: #da8548; font-weight: bold;">10</span>)
 </div>
 </li>
 
-<li><a id="org25ef938"></a>建立模型<br />
+<li><a id="orgcb09b16"></a>建立模型<br />
 <div class="outline-text-4" id="text-11-4-3">
 <div class="org-src-container">
 <pre class="src src-python"><span style="color: #dcaeea;">model</span> = Sequential()
@@ -1054,7 +1054,7 @@ model.add(Dense(units=<span style="color: #da8548; font-weight: bold;">10</span>
 </div>
 </li>
 
-<li><a id="orgbf0dc7e"></a>訓練模型<br />
+<li><a id="org49360a2"></a>訓練模型<br />
 <div class="outline-text-4" id="text-11-4-4">
 <div class="org-src-container">
 <pre class="src src-python">model.<span style="color: #c678dd;">compile</span>(loss=<span style="color: #98be65;">'categorical_crossentropy'</span>,
@@ -1068,7 +1068,7 @@ model.add(Dense(units=<span style="color: #da8548; font-weight: bold;">10</span>
 </div>
 </li>
 
-<li><a id="org7191150"></a>查看訓練過程<br />
+<li><a id="org9a51dc4"></a>查看訓練過程<br />
 <div class="outline-text-4" id="text-11-4-5">
 <div class="org-src-container">
 <pre class="src src-python"><span style="color: #51afef;">import</span> matplotlib.pyplot <span style="color: #51afef;">as</span> plt
@@ -1088,7 +1088,7 @@ show_train_history(<span style="color: #98be65;">'loss'</span>,<span style="colo
 </div>
 </li>
 
-<li><a id="org70f9afe"></a>評估模型準確率<br />
+<li><a id="org6844b29"></a>評估模型準確率<br />
 <div class="outline-text-4" id="text-11-4-6">
 <div class="org-src-container">
 <pre class="src src-python"><span style="color: #dcaeea;">scores</span> = model.evaluate(x_Test , y_Test, batch_size = <span style="color: #da8548; font-weight: bold;">200</span>)
@@ -1098,7 +1098,7 @@ scores[<span style="color: #da8548; font-weight: bold;">1</span>]
 </div>
 </li>
 
-<li><a id="org97bd26d"></a>實際預測結果<br />
+<li><a id="org1482b0b"></a>實際預測結果<br />
 <div class="outline-text-4" id="text-11-4-7">
 <div class="org-src-container">
 <pre class="src src-python"><span style="color: #dcaeea;">prediction</span>=model.predict_classes(x_Test)
@@ -1126,7 +1126,7 @@ plot_images_labels_prediction(x_Test,y_Test,prediction,idx=<span style="color: #
 </div>
 </li>
 
-<li><a id="org9250b28"></a>confusion matrix<br />
+<li><a id="orga446077"></a>confusion matrix<br />
 <div class="outline-text-4" id="text-11-4-8">
 <div class="org-src-container">
 <pre class="src src-python"><span style="color: #51afef;">import</span> pandas <span style="color: #51afef;">as</span> pd
@@ -1260,8 +1260,8 @@ Test Acc: 0.9823
 <h2 id="HomeWork-2"><span class="section-number-2">12</span> 個人作業二</h2>
 <div class="outline-text-2" id="text-HomeWork-2">
 </div>
-<div id="outline-container-orgad24939" class="outline-3">
-<h3 id="orgad24939"><span class="section-number-3">12.1</span> 背景</h3>
+<div id="outline-container-org3534429" class="outline-3">
+<h3 id="org3534429"><span class="section-number-3">12.1</span> 背景</h3>
 <div class="outline-text-3" id="text-12-1">
 <p>
 某醫學研究中心針對旗下醫院800名疑似患有「無定向喪心病狂間歇性全身機能失調症」的患者做了一份病徵研究，針對以下這些可能病徵進行程度檢驗<br />
@@ -1286,11 +1286,11 @@ Test Acc: 0.9823
 </div>
 </div>
 
-<div id="outline-container-org993e478" class="outline-3">
-<h3 id="org993e478"><span class="section-number-3">12.2</span> 作業要求</h3>
+<div id="outline-container-org041be57" class="outline-3">
+<h3 id="org041be57"><span class="section-number-3">12.2</span> 作業要求</h3>
 <div class="outline-text-3" id="text-12-2">
 <ul class="org-ul">
-<li>嗯，基本上就是自由心證，你能交多少就交多少，你想只交一張圖也行，你要從頭交待你們在做什麼、每一個步驟有啥意義、一共測了幾種CASE、最後成果如何、你們的心得&#x2026;.也行，看你的誠意啦-_-(這向來是最坑人的一句話)<br /></li>
+<li>嗯，基本上就是自由心證，你能交多少就交多少，你想只交一張圖也行，你要從頭交待你在做什麼、每一個步驟有啥意義、一共測了幾種CASE、最後成果如何、你的心得&#x2026;.也行，看你的誠意啦-_-(這向來是最坑人的一句話)<br /></li>
 <li>我是這樣覺得啦&#x2026;model隨便叠一叠，精確度至少也不應該低於 <b>0.8</b> 吧&#x2026;QQ<br /></li>
 </ul>
 </div>
@@ -1309,7 +1309,7 @@ Test Acc: 0.9823
 </div></div>
 <div id="postamble" class="status">
 <p class="author">Author: Yung Chin, Yen</p>
-<p class="date">Created: 2021-06-12 Sat 02:04</p>
+<p class="date">Created: 2021-06-12 Sat 02:06</p>
 </div>
 </body>
 </html>
